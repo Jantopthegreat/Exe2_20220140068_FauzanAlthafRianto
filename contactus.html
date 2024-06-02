@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | GROOVE Streetwear</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container h2 {
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        .form-group div {
+            margin-top: 5px;
+        }
+
+        .form-group div label {
+            margin-right: 10px;
+        }
+
+        button[type="submit"],
+        button[type="button"] {
+            background-color: #0074D9;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover,
+        button[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <h3>GROOVE Streetwear</h3>
+                    </div>
+                    <nav>
+                        <ul class="nav-menu">
+                            <li class="nav-item"><a href="index.html">Home</a></li>
+                            <li class="nav-item"><a href="products.html">Products</a></li>
+                            <li class="nav-item"><a href="contactus.html">Contact Us</a></li>
+                            <li class="nav-item"><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <div class="toggle"><i class="fa fa-bars"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to get in touch with us using the form below.</p>
+        <div class="form-container">
+            <form action="#" method="POST" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name" style="color: #000000;">Your Name</label>
+                    <input style="color: #000000;" type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" style="color: #000000;">Your Email</label>
+                    <input style="color: #000000;" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" style="color: #000000;">Your Message</label>
+                    <textarea style="color: #000000;" id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+                <button type="button" onclick="showAlert()">Show Alert</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="child">
+                <div class="footerChild1">
+                    <h4>Mail us at: <a href="mailto:hannes@hannesdev.xyz">groovestwear@mail.co.id</a></h4>
+                </div>
+                <div class="footerChild2">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="linkgoeshere">Payments</a></li>
+                        <li><a href="linkgoeshere">Shipping</a></li>
+                        <li><a href="linkgoeshere">Return Policy</a></li>
+                        <li><a href="linkgoeshere">FAQ Topics</a></li>
+                    </ul>
+                </div>
+                <div class="footerChild2">
+                    <h3>Our Socials</h3>
+                    <ul>
+                        <li><a href="linkgoeshere">Instagram</a></li>
+                        <li><a href="linkgoeshere">Facebook</a></li>
+                        <li><a href="linkgoeshere">Twitter</a></li>
+                        <li><a href="linkgoeshere">Linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="footerChild2">
+                    <h3>Registered Office</h3>
+                    <ul>
+                        <li>Apartment A13, Floor 15,</li>
+                        <li>Sunnyvale Park,</li>
+                        <li>Ilinois, CA.</li>
+                        <li>-</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="belowfooter">
+                &copy; GROOVE Streetwear Associates, 2024 <br>
+                Fauzan Althaf, All rights reserved.
+            </div>
+        </div>
+    </div>
+    <script>
+        function showAlert() {
+            alert('This is an alert message!');
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Form submitted successfully!');
+        }
+    </script>
+</body>
+
+</html>
